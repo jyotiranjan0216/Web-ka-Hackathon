@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Care4u website</title>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <!-- <div>
+                <a href="#" class="logo-image">
+                    <img src="images/logo-image.png" height="10px" width="70px" alt="Care4u logo" class="nav__logo" id="logo" />
+                </a>
+            </div> -->
+            <a href="#" class="nav_siteName"><span class="highlight">Care</span>&nbsp;4u</a>
+            <!-- <a href="#" class="nav_siteName">Care4u</a> -->
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Operations</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Book a bed</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <!-- <h1 onclick="alert('HTML alert')"> -->
+            <h1>
+                <!-- Green highlight effect -->
+                <span class="highlight">Health Care</span>
+                <br />for&nbsp;
+                <span class="highlight">your family</span>
+            </h1>
+            <h4>Get Experienced & Certified nurses and attendant at home.</h4>
+            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+            <img src="images/top-front-doctor-checking-patient.jpg" class="header__img" alt="Minimalist bank items" />
+        </div>
+    </header>
+
+    <section class="section" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">Nursing services</h2>
+            <h3 class="section__header">
+                Everything you need in a nursing services and more.
+            </h3>
+        </div>
+
+        <div class="features">
+            <img src="images/group-of-doctors.webp" data-src="images/group-of-doctors.webp" alt="Computer" class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="images/desktop-regular-24.svg#icon-monitor"></use>
+                    </svg> -->
+                    <i class='bx bx-upload'></i>
+                </div>
+                <h5 class="features__header">Experienced Team</h5>
+                <p>
+                    Our team has years of specialized experience to provide professional nursing care services
+                </p>
+            </div>
+
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                    </svg> -->
+                    <i class='bx bx-trending-up' style='color:#5ec576'  ></i>
+                </div>
+                <h5 class="features__header">Special Abilities Patient Care</h5>
+                <p>
+                    Our nurses understand that patients with special abilities need special personal attention
+                </p>
+            </div>
+            <img src="images/girl-checking-patient-both-smilling.jpeg" data-src="images/girl-checking-patient-both-smilling.jpeg" alt="Plant" class="features__img lazy-img" />
+
+            <img src="images/front-three-lady-staff.webp" data-src="images/front-three-lady-staff.webp" alt="Credit card"
+                class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <!-- <svg>
+                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                    </svg> -->
+                    <i class='bx bx-credit-card' style='color:#5ec576' ></i>
+                </div>
+                <h5 class="features__header">Certified Nurses</h5>
+                <p>
+                    We have a versatile team of certified nurses that specialize in providing professional at home
+                    nursing care
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">Operations</h2>
+            <h3 class="section__header">
+                Hospitality is simply an opportunity to show live and care.
+            </h3>
+        </div>
+
+        <div class="operations">
+            <div class="operations__tab-container">
+                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                    ICU SET UP AT HOME
+                </button>
+                <button class="btn operations__tab operations__tab--2" data-tab="2">
+                    ISOLATION CARE
+                </button>
+                <button class="btn operations__tab operations__tab--3" data-tab="3">
+                    LAB INVESTIGATIONS
+                </button>
+            </div>
+            <div class="operations__content operations__content--1 operations__content--active">
+                <div class="operations__icon operations__icon--1">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-upload"></use>
+                    </svg>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Patients in serious conditions need more emotional support. So, to bring your loved ones closer to
+                    you, we provide an ICU setup facility at home. The care team is proficient in ICU and treats the
+                    patient in-hospital like environment within your comfort.
+                </p>
+            </div>
+
+            <div class="operations__content operations__content--2">
+                <div class="operations__icon operations__icon--2">
+                    <!-- <svg>
+                        <use xlink:href="img/icons.svg#icon-home"></use>
+                    </svg> -->
+                    <i class='bx bx-upload' style='color:#ffcb03'  ></i>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Currently, Covid-19 is a significant threat to public health. So, nowadays, we are also providing
+                    intensive personalized isolation care at home for covid positive patients. Our service helps the
+                    patients to speed up their recovery and prevent any further serious infections.
+                </p>
+            </div>
+            <div class="operations__content operations__content--3">
+                <div class="operations__icon operations__icon--3">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-eye"></use>
+                    </svg>
+                </div>
+                <!-- <h5 class="operations__header">
+                    ************===============*******************
+                </h5> -->
+                <p>
+                    Our partner service providers are fully equipped with automated instruments and cell counters for
+                    carrying out regular lab investigations like TLC, DLC hemoglobin, etc. Besides, regular lab
+                    investigations our Specialists can also carry out special investigations in almost every niche.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--3">
+        <div class="section__title section__title--testimonials">
+            <h2 class="section__description">Testimonials</h2>
+            <h3 class="section__header">
+                Thank You to our amazing clients.
+            </h3>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">Hospitality is extremely good</h5>
+                    <blockquote class="testimonial__text">
+                        I needed someone reliable to stay with and help my mother who was home alone at the time. Abrar
+                        sent a female attendant over in the next few hours even though it was already late at night, so
+                        someone could be with her at all times. He really helped me sleep in peace that night. Thank
+                        you!
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="img/testimonial-1.jpg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MR HARDIK JAIN</h6>
+                        <p class="testimonial__location">Punjabi Bagh, Delhi</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Doctors and staff are really caring
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Unfortunately my mother suffered from severe illness and I requested Mr. Mukul for help. He
+                        constantly helped us to meet our request 24*7. I am satisfied with the services and care
+                        providers. I owe you a debt of gratitude. I'm eternally grateful for your support. Thank you.
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="img/testimonial-2.jpg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MR ANKIT BANSAL</h6>
+                        <p class="testimonial__location">Sonipat, Haryana</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        Amazed with the services
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        I had a surgery and needed daily medical dressing. I called Abrar and am happy to recommend his
+                        service. He came home and changed my dressing with utmost care. He is like a friend now and I
+                        contact him for all my home medical needs
+                    </blockquote>
+                    <address class="testimonial__author">
+                        <img src="img/testimonial-3.jpg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">MRS ANSHU SINGH</h6>
+                        <p class="testimonial__location">DELHI</p>
+                    </address>
+                </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="section section--sign-up">
+        <div class="section__title">
+            <h3 class="section__header">
+                You are just a click away from making an appointment
+            </h3>
+        </div>
+        <button class="btn btn--show-modal">Request an appoinment</button>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Use</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <img src="img/icon.png" alt="Logo" class="footer__logo" />
+        <p class="footer__details">
+            For more details Contact us:
+            <a class="footer__link" href="#">9817956982,</a>&nbsp;
+            <a class="footer__link" href="#">9845634789,</a>&nbsp;
+            <a class="footer__link" href="#">9867483947.</a>&nbsp;
+        </p>
+
+    </footer>
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Book a bed <br />
+            in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="modal__form">
+            <label>First Name</label>
+            <input type="text" />
+            <label>Last Name</label>
+            <input type="text" />
+            <label>Email Address</label>
+            <input type="email" />
+            <button class="btn bookbtnNextStep">Next step &rarr;</button>
+        </form>
+    </div>
+     
+    <!-- added by aman -->
+    <div class="modal-2 hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header_location">
+            Choose Your Location<br />
+            <!-- in just <span class="highlight-form">5 minutes</span> -->
+        </h2>
+        <div class="grid-container">
+            <!-- <div class="map-choose-location"> -->
+            <!-- add map -->
+            <p>will add map soon...</p>
+            <div class="grid-items">
+                <form class="modal__form_location">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="option">option</option>
+                    </select>
+                    <!-- <input type="submit" value="Submit" /> -->
+                    <label for="Area">Area</label>
+                    <select name="area" id="area">
+                        <option value="option">option</option>
+                    </select>
+                    <label>Pincode</label>
+                    <input type="text" />
+                    <button class="btn btn-chooseLocationNextStep">Next step &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class=""></div>
+    <div class="overlay hidden"></div>
+
+
+</body>
+
+</html>
